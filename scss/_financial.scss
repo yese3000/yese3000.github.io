@@ -1,0 +1,391 @@
+.fiancial-square{
+    margin-top: 10rem;
+    display: grid;
+
+    .first-images {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 4fr 2fr;
+    }
+
+    button {
+        background: $primary;
+    }
+
+    .first {
+        background-image: url(../../images/dark_printers_factory.jpg);
+        width: 19.5rem;
+        height: 17rem;
+        color: $base;
+        text-align: center;
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        button {
+            margin-top: 5rem;
+        }
+    }
+
+    .paper {
+        background-image: url(../../images/COLOR_Colorful_Paper.jpg);
+        height: 17rem;
+        padding-top: 8rem;
+        padding-left: 7rem;
+        color: $base;
+    }
+}
+
+.just-words {
+    margin: 7rem 0;
+
+    h2 {
+        padding: 2rem;
+    }
+
+    p {
+        padding-left: 2rem;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 2rem;
+        max-width: 51rem;
+    }
+}
+
+.see-products {
+    margin-top: 5rem;
+    margin-left: 23rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 2rem;
+
+    div {
+        margin: 5rem;
+    }
+}
+
+.robo-square {
+    background: $primary;
+    color: white;
+    display: grid;
+    padding: 4rem 1rem;
+
+    h2, button {
+        margin: 2rem 0;
+    }
+
+    p {
+        max-width: 19.5rem;
+        font-size: 14px;
+    }
+
+    button {
+        background: $sky-blue;
+    }
+}
+
+.recent-square_header {
+    h2 {
+        position: relative;
+        top: 2rem;
+        left: 4rem;
+        margin: 2rem 0;
+    }
+}
+
+
+.recent-square {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90rem;
+
+    div {
+        max-width: 29.75rem;
+        background: $primary;
+        color: $base;
+        padding: 0 6rem;
+        position: relative;
+        text-align: center;
+        margin: 2rem 0;
+
+        .image-aqu {
+            position: relative;
+            left: -6rem;
+            top: -2rem;
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 26px;
+            padding: 2rem 0;
+        }
+
+        button {
+            background: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+.grey-square {
+    color: $base;
+    background: $main-grey;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 1rem;
+
+
+    h2, p {
+        position: relative;
+        margin-left: 7rem;
+    }
+
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 500;
+        max-width: 30rem;
+    }
+
+    button {
+        background: $secondary;
+        margin: 4rem 0;
+        position: relative;
+        margin-left: 7rem;
+    }
+
+    img {
+        margin-left: .25rem;
+        margin-left: 4rem;
+    }
+}
+
+.graph {
+    padding: 4rem;
+
+    p {
+        position: relative;
+        top: 2rem;
+        margin-bottom: 4rem;
+        max-width: 50rem;
+        line-height: 26px;
+    }
+
+    button {
+        background: $primary;
+        position: relative;
+        top: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 650px) {
+    .fiancial-square {
+        padding-left: 2rem;
+
+        .first-images {
+            margin-top: 5rem;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 4fr;
+        }
+
+        .paper, .first {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .first {
+            margin-left: 2.5rem;
+        }
+
+        .paper {
+            max-width: 30rem;
+        }
+    }
+
+    .see-products {
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+
+    .robo-square {
+
+        p, h2, button {
+            position: relative;
+        }
+
+        p, h2 {
+            left: 5rem;
+        }
+    }
+
+    .graph {
+        padding: 4rem;
+
+        p {
+            position: relative;
+            top: 2rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        button {
+            background: $primary;
+            position: relative;
+            top: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+    .fiancial-square {
+        flex-direction: column;
+        padding-left: 2rem;
+        margin-bottom: -40rem;
+
+        .paper, .first {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .paper {
+            max-width: 40rem;
+        }
+    }
+
+    .robo-square {
+
+        p, h2, button,img {
+            position: relative;
+        }
+
+        img {
+            left: 2rem;
+        }
+
+        p, h2 {
+            left: 15rem;
+        }
+    }
+
+    .recent-square_header {
+        h2 {
+            margin-left: 11rem;
+        }
+    }
+
+    .recent-square {
+        margin-left: 12rem;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1999px) {    
+    .fiancial-square {
+    flex-direction: row;
+    padding-left: 2rem;
+
+    h2 {
+        position: relative;
+        left: 20rem;
+    }
+
+    .first-images {
+        padding-left: 20rem;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
+        gap: 10rem;
+    }
+
+    .paper, .first {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .paper {
+        background-repeat: no-repeat;
+    }
+}
+
+.just-words  {
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+}
+
+.products {
+    padding-left: 10rem;
+}
+
+.robo-square{
+grid-template-rows: 2fr;
+grid-template-columns: 4fr 2fr;
+}
+
+.recent-square_header {
+    h2 {
+        margin-left: 26rem;
+        margin-bottom: 5rem;
+        margin-top: 3rem;
+    }
+}
+
+.recent-square {
+    margin-left: 25rem;
+
+    div {
+        margin: 2rem;
+    }
+}
+
+.grey-square {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:  2fr 2fr;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+
+.graph {
+
+    .chart {
+        background: $primary;
+        position: relative;
+        left: 20rem;
+    }
+
+    button {
+        background: $primary;
+        position: relative;
+        left: 71rem;
+        top: 6rem;
+    }
+}
+}
+
+@media only screen and (min-width: 1600px) {   
+    .graph {
+        h2, p {
+            position: relative;
+            left: 30rem;
+        }
+    }
+}
