@@ -41,10 +41,8 @@ button {
 
 .main-button {
     background: $primary;
-    a {
-        text-decoration: none;
-        color: $base;
-      }
+    text-decoration: none;
+    color: $base;
 }
 
 .secondary-button {
